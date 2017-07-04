@@ -18,7 +18,7 @@ def tts(sentence, speaker):
     if rescode == 200:
         print("TTS mp3 저장")
         response_body = response.read()
-        with open('1111.mp3', 'wb') as f:
+        with open('instant.mp3', 'wb') as f:
             f.write(response_body)
     else:
         print("Error Code:" + rescode)
